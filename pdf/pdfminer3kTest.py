@@ -18,6 +18,7 @@ def readPDF(pdfFile):
     retstr.close()
     return content
 
+
 pdfFile = urlopen('http://pythonscraping.com/pages/warandpeace/chapter1.pdf')
 outputString = readPDF(pdfFile)
 print(outputString)
