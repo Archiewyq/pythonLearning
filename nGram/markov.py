@@ -1,3 +1,4 @@
+# 基于马尔可夫模型的简单文本生成链
 from urllib.request import urlopen
 from random import randint
 
@@ -34,6 +35,7 @@ def buildWorldDict(text):
             wordDict[words[i-1]][words[i]] = 0
         wordDict[words[i-1]][words[i]] = wordDict[words[i-1]][words[i]]+1
 
+    print(wordDict)
     return wordDict
 
 
