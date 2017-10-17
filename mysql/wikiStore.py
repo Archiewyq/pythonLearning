@@ -44,7 +44,7 @@ links = getLinks('/wiki/kevin_Bacon')
 try:
     while len(links)>0:
         newArticle = links[random.randint(0, len(links)-1)].attrs['href']
-        print(newArticle)
+        #print(newArticle)
         links = getLinks(newArticle)
 finally:
     cur.close()
